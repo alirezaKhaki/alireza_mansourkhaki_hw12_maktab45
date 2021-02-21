@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      id="Viewport"
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <title>W3.CSS Template</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b4861f6227.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="mybody">
+    <!-- Navbar -->
+    <div class="navbar col-sm-1" id="navbar">
+      <a class="active" href="#home"><i class="fa fa-home mg-nav"></i>Logo</a>
+      <a href="#team" class="ds-none ds-600-block">Team</a>
+      <a href="#work" class="ds-none ds-600-block">Work</a>
+      <a href="#price" class="ds-none ds-600-block">Price</a>
+      <a href="#contact" class="ds-none ds-600-block">Contact</a>
+      <div class="ds-none ds-600-block dropdown col-sm-8">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column col-sm-6">
+              <a>Link</a>
+              <a>Link</a>
+              <a>Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="javascript:void(0);"
+        class="float ds-600-none"
+        onclick="myNavbar()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="./03.html" id="search-icon" class="float ds-none ds-600-block">
+        <i class="fa fa-search"></i>
+      </a>
+      <div id="myLinks">
+        <a href="#team" class="hum-menu">Team</a>
+        <a href="#work" class="hum-menu">Work</a>
+        <a href="#price" class="hum-menu">Price</a>
+        <a href="#contact" class="hum-menu">Contact</a>
+        <a href="#search-icon" class="hum-menu">Search</a>
+      </div>
+    </div>
+
+    <!-- Image Header -->
+
+    <div class="topdiv" id="home">
+      <img src="./img/01.jpg" alt="" class="topimg col-sm-1" />
+      <div class="toptext">
+        <button
+          class="t-text"
+          onclick="document.getElementById('modal').style.display='block'"
+        >
+          LEARN W3.CSS
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div id="modal" class="modal col-sm-1">
+      <div class="col-sm-1 modal-content col-md-7">
+        <header class="modal-container">
+          <span onclick="document.getElementById('modal').style.display='none'"
+            ><i class="fa fa-remove remove-icon"></i
+          ></span>
+          <h4>Oh snap! We just showed you a modal..</h4>
+          <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+        </header>
+        <div class="modal-cont">
+          <p>Cool huh? Ok, enough teasing around..</p>
+          <p>
+            Go to our
+            <a class="" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn
+            more!
+          </p>
+        </div>
+        <footer class="modal-footer">
+          <p>Modal footer</p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Team -->
+
+    <div class="col-sm-1">
+      <div class="ourteamdiv" id="team">
+        <h2 class="teamtext" style="font-size: 30px !important">OUR TEAM</h2>
+        <p class="teamtext">Meet the team - our office rats:</p>
+      </div>
+      <div class="teamdiv teamdiv-600">
+        <div class="col-md-6">
+          <img src="./img/02.jpg" class="team-img col-sm-1 col-md-7" alt="" />
+          <h3>Johnny Walker</h3>
+          <p><b>Web Designer</b></p>
+        </div>
+        <div class="col-md-6">
+          <img src="./img/02.jpg" class="team-img col-sm-1 col-md-7" alt="" />
+          <h3>Johnny Walker</h3>
+          <p><b>Jan Ringo</b></p>
+        </div>
+        <div class="col-md-6">
+          <img src="./img/02.jpg" class="team-img col-sm-1 col-md-7" alt="" />
+          <h3>Johnny Walker</h3>
+          <p><b>Boss man</b></p>
+        </div>
+        <div class="col-md-6">
+          <img src="./img/02.jpg" class="team-img col-sm-1 col-md-7" alt="" />
+          <h3>Johnny Walker</h3>
+          <p><b>Web Designer</b></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- our Work -->
+
+    <div class="workdiv workdiv-600 padd-600" id="work">
+      <div class="ourworkdiv col-sm-4 col-md-1">
+        <h2>Our Work</h2>
+        <p class="p-fontsize-600 p-fontsize-800 p-fontsize-1000">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="col-sm-4 col-md-1">
+        <div class="whitework">
+          <img src="./img/03.jpg" alt="" width="100%" />
+          <div class="work-container">
+            <h3 class="mg-0">Customer 1</h3>
+            <h4>Trade</h4>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-1">
+        <div class="whitework">
+          <img src="./img/04.jpg" alt="" width="100%" />
+          <div class="work-container">
+            <h3 class="mg-0">Customer 2</h3>
+            <h4>Trade</h4>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-1">
+        <div class="whitework">
+          <img src="./img/05.jpg" alt="" width="100%" />
+          <div class="work-container">
+            <h3 class="mg-0">Customer 3</h3>
+            <h4>Trade</h4>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+            <p>Blablabla</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- + -->
+
+    <div class="positive">
+      <a onclick="openNav()" class="pos-circle">+</a>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >Close ×</a
+      >
+      <a href="#" class="Side-Link">Link 1</a>
+      <a href="#" class="Side-Link">Link 2</a>
+      <a href="#" class="Side-Link">Link 3</a>
+      <a href="#" class="Side-Link">Link 4</a>
+      <a href="#" class="Side-Link">Link 5</a>
+    </div>
+
+    <!-- Price -->
+
+    <div class="col-sm-1">
+      <div class="headprice" id="price">
+        <h2>PRICING</h2>
+        <p>Choose a pricing plan that fits your needs.</p>
+        <br />
+      </div>
+      <div class="pricediv pricediv-600">
+        <div class="col-sm-4 col-md-8">
+          <table class="demo col-sm-1 col-md-2">
+            <thead style="color: white">
+              <tr>
+                <th style="font-size: 24px !important">Basic</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>10GB</b> Storage</td>
+              </tr>
+              <tr>
+                <td><b>10</b> Emails</td>
+              </tr>
+              <tr>
+                <td><b>10</b> Domains</td>
+              </tr>
+              <tr>
+                <td><b>Endless</b> Support</td>
+              </tr>
+              <tr style="height: 100px">
+                <td>
+                  <h2 style="margin-bottom: -10px">
+                    <i class="fa fa-usd" style="margin-right: 10px"></i> 10
+                  </h2>
+                  <br />
+                  per month
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color: #f0f0f0 !important">
+                  <button class="pricebtn">
+                    <i class="fa fa-check"></i> Sign Up
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="col-sm-4 col-md-8 pad-15 pad0-table-600">
+          <table class="demo col-sm-1 col-md-2">
+            <thead style="color: white">
+              <tr>
+                <th
+                  style="
+                    background-color: #666666 !important;
+                    font-size: 24px !important;
+                  "
+                >
+                  Pro
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>25GB</b> Storage</td>
+              </tr>
+              <tr>
+                <td><b>25</b> Emails</td>
+              </tr>
+              <tr>
+                <td><b>25</b> Domains</td>
+              </tr>
+              <tr>
+                <td><b>Endless</b> Support</td>
+              </tr>
+              <tr style="height: 100px">
+                <td>
+                  <h2 style="margin-bottom: -10px">
+                    <i class="fa fa-usd" style="margin-right: 10px"></i> 25
+                  </h2>
+                  <br />
+                  per month
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color: #f0f0f0 !important">
+                  <button class="pricebtn">
+                    <i class="fa fa-check"></i> Sign Up
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="col-sm-4 col-md-8 pad-15 pad0-table-600">
+          <table class="demo col-sm-1 col-md-2 margin-bot mg-table-600">
+            <thead style="color: white">
+              <tr>
+                <th style="font-size: 24px !important">Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>50GB</b> Storage</td>
+              </tr>
+              <tr>
+                <td><b>50</b> Emails</td>
+              </tr>
+              <tr>
+                <td><b>50</b> Domains</td>
+              </tr>
+              <tr>
+                <td><b>Endless</b> Support</td>
+              </tr>
+              <tr style="height: 100px">
+                <td>
+                  <h2 style="margin-bottom: -10px">
+                    <i class="fa fa-usd" style="margin-right: 10px"></i> 50
+                  </h2>
+                  <br />
+                  per month
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color: #f0f0f0 !important">
+                  <button class="pricebtn">
+                    <i class="fa fa-check"></i> Sign Up
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div class="contact-div contact-div-600" id="contact">
+      <div class="contdiv col-md-4">
+        <div class="contactdiv">
+          <span class="contactspan">Contact Us</span>
+        </div>
+        <h3>Address</h3>
+        <p>Swing by for a cup of coffee, or whatever.</p>
+        <p><i class="fa fa-map-marker icon-contact"></i>  Chicago, US</p>
+        <p><i class="fas fa-phone-alt icon-contact"></i>  +00 1515151515</p>
+        <p><i class="fa fa-envelope-o icon-contact"></i>  test@test.com</p>
+      </div>
+
+      <div class="formdiv col-sm-5 form-div-600 col-md-5">
+        <form>
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="fname" required />
+          <label for="lname">Email</label>
+          <input type="text" id="email" name="email" required />
+          <label for="lname">Message</label>
+          <input type="text" id="message" name="message" required />
+          <input class="" type="checkbox" checked name="Like" />
+          <label>I Like it!</label>
+          <button type="submit" class="sendbtn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Map -->
+
+    <img src="./img/06.jpg" class="map-img" style="width: 100%" />
+
+    <!-- Footer -->
+
+    <footer>
+      <h3>Follow Us</h3>
+      <a class="ft-icon" href="/" title="Facebook"
+        ><i class="fa fa-facebook"></i
+      ></a>
+      <a class="ft-icon" href="/" title="Twitter"
+        ><i class="fa fa-twitter"></i
+      ></a>
+      <a class="ft-icon" href="/" title="Google +"
+        ><i class="fa fa-google-plus"></i
+      ></a>
+      <a class="ft-icon" href="/" title="Instagram"
+        ><i class="fa fa-instagram"></i
+      ></a>
+      <a class="ft-icon" href="/" title="Linkedin"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          class="linkfoot"
+          target="_blank"
+          >w3.css</a
+        >
+      </p>
+
+      <div class="tooltrip">
+        <a href="#home" class="tooltrip-icon"
+          ><span class="ds-none go-top-600">Go To Top</span
+          ><span><i class="fa fa-chevron-circle-up icon-gray-600"></i></span
+        ></a>
+      </div>
+    </footer>
+  </body>
+  <script src="./assets/main.js"></script>
+</html>
